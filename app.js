@@ -51,17 +51,17 @@ function showInfo(){
     getData.forEach((element, index) => {
         let createElement = `<tr class="employeeDetails">
             <td data-label="Id">${index+1}</td>
-            <td><img src="${element.picture}" alt="" width="50" height="50"></td>
-            <td>${element.employeeName}</td>
-            <td>${element.employeeAge}</td>
-            <td>${element.employeeCity}</td>
-            <td>${element.employeeEmail}</td>
-            <td>${element.employeePhone}</td>
-            <td>${element.employeePost}</td>
-            <td>${element.startDate}</td>
+            <td data-label="Picture"><img src="${element.picture}" alt="" width="50" height="50"></td>
+            <td data-label="Name">${element.employeeName}</td>
+            <td data-label="Age">${element.employeeAge}</td>
+            <td data-label="City">${element.employeeCity}</td>
+            <td data-label="email">${element.employeeEmail}</td>
+            <td data-label="Phone">${element.employeePhone}</td>
+            <td data-label="Post">${element.employeePost}</td>
+            <td data-label="Date">${element.startDate}</td>
 
 
-            <td>
+            <td data-label="Acctions">
                 <button class="btn btn-success" onclick="readInfo('${element.picture}', '${element.employeeName}', '${element.employeeAge}', '${element.employeeCity}', '${element.employeeEmail}', '${element.employeePhone}', '${element.employeePost}', '${element.startDate}')" data-bs-toggle="modal" data-bs-target="#readData"><i class="bi bi-eye"></i></button>
 
                 <button class="btn btn-primary" onclick="editInfo(${index}, '${element.picture}', '${element.employeeName}', '${element.employeeAge}', '${element.employeeCity}', '${element.employeeEmail}', '${element.employeePhone}', '${element.employeePost}', '${element.startDate}')" data-bs-toggle="modal" data-bs-target="#userForm"><i class="bi bi-pencil-square"></i></button>

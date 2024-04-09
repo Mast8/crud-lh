@@ -1,3 +1,8 @@
+table thead {
+    background-color: grey;
+    color: white;
+}
+
 table tr td{
     vertical-align: middle;
 }
@@ -102,7 +107,7 @@ form .inputField > div input{
 
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 970px) {
     
         table {
           border: 0;
@@ -145,6 +150,7 @@ form .inputField > div input{
             content: attr(aria-label);
             */
             content: attr(data-label);
+           
             float: left;
             font-weight: bold;
             text-transform: uppercase;
